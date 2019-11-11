@@ -13,51 +13,51 @@
 					<main class="main-body">
 						<form id="login-form" action="/login" method="POST">
 							<div class="form-group">
-								<label class="sr-only" for="login-username">Username</label>
-								<input type="text" class="form-control" id="login-username" name="username" placeholder="Username" data-toggle="tooltip" data-placement="bottom" title="Enter your username.">
+								<label class="sr-only" for="login-username">Логин</label>
+								<input type="text" class="form-control" id="login-username" name="username" placeholder="Логин" data-toggle="tooltip" data-placement="bottom" title="Введите свой логин.">
 							</div>
 							<div class="form-group">
-								<label class="sr-only" for="login-password">Password</label>
-								<input type="password" class="form-control" id="login-password" name="password" placeholder="Password" data-toggle="tooltip" data-placement="bottom" title="Enter your password.">
+								<label class="sr-only" for="login-password">Пароль</label>
+								<input type="password" class="form-control" id="login-password" name="password" placeholder="Пароль" data-toggle="tooltip" data-placement="bottom" title="Введите пароль.">
 							</div>
 							<div class="pull-left text-left">
-								Do you've a problem?<br>
-								<a class="admin-contact">Contact to admin.</a>
+								Проблемы?!<br>
+								<a href="https://vk.com/id563179473">Связаться с Админом.</a>
 							</div>
 							<div class="text-right">
-								<button type="button" class="btn btn-default mr-10 show-join">Join</button><button type="submit" class="btn btn-success">Login</button>
+								<button type="button" class="btn btn-default mr-10 show-join">Регистрация</button><button type="submit" class="btn btn-success">Войти</button>
 							</div>
 						</form>
 						<form id="join-form" class="no-display" action="/join" method="POST">
 							<div class="form-group">
-								<label class="sr-only" for="join-username">Username</label>
-								<input type="text" class="form-control" id="join-username" name="username" placeholder="Username" data-toggle="tooltip" data-placement="bottom" title="The username must be unique and 5 to 20 characters long and just alphanumeric characters(a-z, A-Z, 0-9), underscore(_), hyphen(-).">
+								<label class="sr-only" for="join-username">Логин</label>
+								<input type="text" class="form-control" id="join-username" name="username" placeholder="Логин" data-toggle="tooltip" data-placement="bottom" title="Логин должен быть уникальным размер от 5 до 20 символов. допустимые знаки(a-z, A-Z, 0-9, _, -)">
 							</div>
 							<div class="form-group">
-								<label class="sr-only" for="join-email">Email</label>
-								<input type="text" class="form-control" id="join-email" name="email" placeholder="Email" data-toggle="tooltip" data-placement="bottom" title="The email must be unique and valid, It will use when you forgot password.">
+								<label class="sr-only" for="join-email">Почта</label>
+								<input type="text" class="form-control" id="join-email" name="email" placeholder="Почта" data-toggle="tooltip" data-placement="bottom" title="Почта должна быть настоящей для того, что бы вы могли восстановить доступ">
 								<div class="checkbox ml-10">
-									<label><input type="checkbox" id="join-open-email" name="open-email"> Email open to the public in <a href="/profile">profile page</a>.</label>
+									<label><input type="checkbox" id="join-open-email" name="open-email"> Сделать почту публичной.</label>
 								</div>
 							</div>
 							<div class="form-group">
-								<label class="sr-only" for="join-password">Password</label>
-								<input type="password" class="form-control" id="join-password" name="password" placeholder="Password" data-toggle="tooltip" data-placement="bottom" title="The password must be case sensitive and 6 to 50 characters long.">
+								<label class="sr-only" for="join-password">Пароль</label>
+								<input type="password" class="form-control" id="join-password" name="password" placeholder="Пароль" data-toggle="tooltip" data-placement="bottom" title="Пароль должен состоять от 6 до 20 символов">
 							</div>
 							<div class="form-group">
-								<label class="sr-only" for="join-confirm-password">Confirm Password</label>
-								<input type="password" class="form-control" id="join-confirm-password" name="confirm-password" placeholder="Confirm Password" data-toggle="tooltip" data-placement="bottom" title="The password must be case sensitive and 6 to 50 characters long, and must be equal to above password.">
+								<label class="sr-only" for="join-confirm-password">Подтверждение пароля</label>
+								<input type="password" class="form-control" id="join-confirm-password" name="confirm-password" placeholder="Подтверждение пароля" data-toggle="tooltip" data-placement="bottom" title="Введите снова пароль">
 							</div>
 							<div class="form-group">
-								<label class="sr-only" for="join-comment">Comment</label>
-								<input type="text" class="form-control" id="join-comment" name="comment" placeholder="Comment" data-toggle="tooltip" data-placement="bottom" title="The comment must be 30 characters long.">
+								<label class="sr-only" for="join-comment">Название учебного заведения</label>
+								<input type="text" class="form-control" id="join-comment" name="comment" placeholder="Учебное заведение" data-toggle="tooltip" data-placement="bottom" title="Введите название вашего учебного заведения">
 							</div>
 							<div class="pull-left text-left">
-								Do you've a problem?<br>
-								<a class="admin-contact">Contact to admin.</a>
+								Проблемы?!<br>
+								<a href="https://vk.com/id563179473">Связаться с Админом.</a>
 							</div>
 							<div class="text-right">
-								<button type="button" class="btn btn-default mr-10 show-login">Login</button><button type="submit" class="btn btn-success">Join</button>
+								<button type="button" class="btn btn-default mr-10 show-login">Вход</button><button type="submit" class="btn btn-success">Регистрация</button>
 							</div>
 						</form>
 					</main>

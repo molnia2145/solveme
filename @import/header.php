@@ -17,7 +17,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta property="description" content="<?php echo secure_escape(__SITE__['description']); ?>">
 		<meta name="keywords" content="<?php echo secure_escape(__SITE__['keyword']); ?>">
-		<meta name="author" content="Safflower">
+		<meta name="author" content="molnia2145">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta property="og:title" content="<?php echo secure_escape($title); ?>">
 		<meta property="og:site_name" content="<?php echo secure_escape(__SITE__['title']); ?>">
@@ -62,10 +62,21 @@
 		<div class="container-fluid v-center">
 			<div class="row">
 				<div class="col-sm-6 col-md-5 h-center">
+				
+
 					<header class="text-center">
+					<p>
+						 <img class="logo-icon" src="<?php echo get_new_cache_link('/assets/img/temo.png'); ?>" alt="">
+						 <img class="logo-icon" src="<?php echo get_new_cache_link('/assets/img/mtm.jpg'); ?>" alt="">
+						 <img class="logo-icon" src="<?php echo get_new_cache_link('/assets/img/Cisco.png'); ?>" alt="">
+						 <img class="logo-icon" src="<?php echo get_new_cache_link('/assets/img/geccon.png'); ?>" alt="">
+						<img class="logo-icon" src="<?php echo get_new_cache_link('/assets/img/kait.png'); ?>" alt="ГБПОУ КАИТ №20">
+					</p>
 						<a class="text-black clear-decoration" href="/">
-							<img class="logo-mark" src="<?php echo get_new_cache_link('/assets/img/mark.png'); ?>" style="font-size:32px" alt="💡"><span class="logo-major"><?php echo __SITE__['title']; ?></span>
+							<img class="logo-mark" src="<?php echo get_new_cache_link('/assets/img/mark.png'); ?>" style="font-size:32px" alt="">
+							<span class="logo-major"><?php echo __SITE__['title']; ?></span>
 						</a>
+						
 						<p class="text-muted"><?php echo __SITE__['description']; ?></p>
 					</header>
 <?php
@@ -73,21 +84,25 @@
 ?>
 					<nav class="text-center mt-10 main-menu">
 						<ul class="list-inline m-0">
+							<li>|    </li>
 							<li>
-								<a href="/">Home</a>
-							</li><li>
-								<a href="/chall">Challenge</a>
-							</li><li>
-								<a href="/rank">Rank</a>
-							</li><li>
-								<a href="/status">Status</a>
-							</li><li>
-								<a href="/writeup">Writeup</a>
-							</li><li>
-								<a href="/profile">Profile</a>
+								<a href="/">Главная</a>
 							</li>
+							<li>   |   </li>
+							<li>
+								<a href="/chall">Задания</a>
+							</li>
+							<li>   |   </li>
+							<li>
+								<a href="/rank">Рейтинг</a>
+							</li>
+							<li>    |</li>
 						</ul>
 					</nav>
-<?php
+					
+					<div style="font-size: 140%; margin: 20px 0px; text-align: justify">CTF – соревнования по информационной безопасности, целью которой является совершенствование навыков в области компьютерной безопасности. </div>
+					
+
+<?
 	}
 ?>
