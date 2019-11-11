@@ -10,10 +10,6 @@ It's jeopardy style wargame website called SolveMe.
 
 This source code tested on `PHP 7.2` and `MariaDB 10.1.40`.
 
-~Official Website: <http://solveme.kr/>~
-
-Demo Website: <http://211.239.124.233:20813/>
-
 
 ## How to set-up?
 
