@@ -105,9 +105,9 @@
 							<div class="form-group">
 								<label class="sr-only" for="auth-flag">Flag</label>
 								<div class="input-group">
-									<input type="text" id="auth-flag" class="form-control" placeholder="flag{ ... }" data-toggle="tooltip" data-placement="bottom" title="Enter the flag.">
+									<input type="text" id="auth-flag" class="form-control" placeholder="CYBERTHON{ ... }" data-toggle="tooltip" data-placement="bottom" title="Enter the flag.">
 									<span class="input-group-btn">
-									<button class="auth-btn btn btn-dark" type="submit">Auth</button>
+									<button class="auth-btn btn btn-dark" type="submit">Отправить</button>
 								</div>
 							</div>
 						</form>
@@ -123,13 +123,13 @@
 <?php
 	if(strtotime($prob_info[$i]['register_time']) >= time() - 3600 * 24 * 7){
 ?>
-										<span class="label label-warning ml-5">New</span>
+										<span class="label label-warning ml-5">Новое</span>
 <?php
 	}
 
 	if($prob_info[$i]['is_solved']){
 ?>
-										<span class="label label-success ml-5">Solved</span>
+										<span class="label label-success ml-5">Решено</span>
 <?php
 	}
 ?>
