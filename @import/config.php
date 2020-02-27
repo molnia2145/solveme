@@ -196,6 +196,9 @@
 	function is_writeup_contents($contents){
 		return check_length($contents, 1, 10240);
 	}
+	function is_ploshadka($ploshadka){
+		return check_length($ploshadka, 0, 64);
+	}
 
 	function get_gravatar_link($email, $size){
 		$email = md5($email);
