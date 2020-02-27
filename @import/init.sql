@@ -23,6 +23,7 @@ CREATE TABLE IF NOT EXISTS `[DB_PREFIX]_user` (
 	`open_email` tinyint(1) NOT NULL,
 	`password` binary(64) NOT NULL,
 	`comment` varchar(30) NOT NULL,
+	`ploshadka` varchar(64) NOT NULL,
 	`score` int(4) NOT NULL,
 	`join_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
