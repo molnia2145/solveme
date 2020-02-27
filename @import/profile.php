@@ -21,6 +21,7 @@
 			`email`,
 			`open_email`,
 			`comment`,
+			`ploshadka`,
 			`score`,
 			(SELECT SUM(`prob`.`score`) FROM `{$db_prefix}_problem` AS `prob`) AS `total_score`,
 			(SELECT ROUND(100 / `total_score` * `score`, 2)) AS `score_percent`,
@@ -108,6 +109,15 @@
 		echo filter_var($user_info['comment'], FILTER_VALIDATE_URL) ?
 			secure_escape('[url]'.$user_info['comment'].'[/url]', true) :
 			secure_escape($user_info['comment']);
+	}else{
+		echo '<span class="text-muted">...</span>';
+	}
+?></blockquote>
+						<blockquote class="mt-10 mb-10"><?php
+	if(isset($user_info['ploshadka']{0})){
+		echo filter_var($user_info['ploshadka'], FILTER_VALIDATE_URL) ?
+			secure_escape('[url]'.$user_info['ploshadka'].'[/url]', true) :
+			secure_escape($user_info['ploshadka']);
 	}else{
 		echo '<span class="text-muted">...</span>';
 	}
