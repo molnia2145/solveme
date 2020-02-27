@@ -1,5 +1,5 @@
 <?php
-	if(isset($_POST['username'], $_POST['email'], $_POST['password'], $_POST['confirm-password'], $_POST['comment'])){
+	if(isset($_POST['username'], $_POST['email'], $_POST['password'], $_POST['confirm-password'], $_POST['comment'], $_POST['ploshadka'])){
 
 		is_login() and output(['status' => 'a']); # already logged
 
@@ -8,6 +8,7 @@
 		is_password($_POST['password']) or output(['status' => 'x']); # valid password
 		($_POST['password'] === $_POST['confirm-password']) or output(['status' => 'x']); # valid password
 		is_comment($_POST['comment']) or output(['status' => 'x']); # valid comment
+		is_ploshadka($_POST['ploshadka']) or output(['status' => 'x']); # valid ploshadky
 
 		$p = $pdo->prepare("
 			SELECT
@@ -47,6 +48,7 @@
 				`open_email`,
 				`password`,
 				`comment`,
+				'ploshadka',
 				`score`,
 				`join_time`
 			)
@@ -58,6 +60,7 @@
 				:open_email,
 				:password,
 				:comment,
+				:ploshadka,
 				0,
 				CURRENT_TIMESTAMP
 			)
@@ -67,6 +70,7 @@
 		$p->bindValue(':open_email', isset($_POST['open-email']) ? '1' : '0');
 		$p->bindValue(':password', secure_hash($_POST['password']));
 		$p->bindParam(':comment', $_POST['comment']);
+		$p->bindParam(':ploshadka', $_POST['ploshadka']);
 		$p->execute();
 
 		$p = $pdo->prepare("
